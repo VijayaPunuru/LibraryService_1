@@ -1,12 +1,11 @@
 package com.cis.batch33.library.entity;
-
 import jakarta.persistence.*;
 import lombok.Data;
 
 import java.util.List;
 
-@Entity
 @Table(name="address")
+@Entity
 @Data
 public class Address {
     @Id
@@ -19,8 +18,3 @@ public class Address {
     @OneToMany(mappedBy = "address")
     private List<LibraryMember> members;
 }
-// select * from Address a join library_Member l on a.id=l.address_id
-        // where a.address_id = ?
-
-
-// POJO ENTITY DTO VO BO

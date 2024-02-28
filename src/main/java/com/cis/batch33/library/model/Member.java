@@ -6,8 +6,7 @@ import java.util.List;
 
 @Data
 public class Member {
-
-    private long memberId;
+    private Integer memberId;
     private String firstName;
     private String lastName;
     private String emailAddress;
@@ -15,13 +14,6 @@ public class Member {
     private String memberShipLevel;
     private AddressDTO address;
     private List<CheckoutDTO> checkouts;
+
 }
-// dependencies are correct - pom.xml
-// connection properties -
-// create entity class and repository
-// Autowire in service class and update service methods
-
-
-// GET , PUT DELETE POST
-// book and member
 
